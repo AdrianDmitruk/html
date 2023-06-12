@@ -1,0 +1,46 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+p {
+  margin: 8px 0;
+}
+
+.nav_link {
+  color: blue;
+}
+
+.nav_link-active {
+  color: rgb(154, 61, 112);
+}
+
+.phone_img {
+  width: 300px;
+}
+
+.table {
+  width: 700px;
+}
+
+.table_header {
+  text-align: center;
+  background-color: #b2fffd;
+}
+
+.table_left {
+  background-color: #eafffe;
+}
+
+.table_right {
+  text-align: center;
+}
+
+.form_wrap {
+  margin: 15px 0;
+}
