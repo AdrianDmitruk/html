@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/phone/index.css" />
+    <title>Input</title>
+  </head>
+  <body>
+    <form
+      action="https://webhook.site/b83dcf88-ffb5-4025-9dde-c13d4c442051"
+      method="POST"
+    >
+      <div class="form_wrap">
+        <label>
+          <span>Имя</span>
+          <input type="text" required minlength="2" name="firstName" />
+        </label>
+      </div>
+      <div class="form_wrap">
+        <label>
+          <span>Фамилия</span>
+          <input type="text" required maxlength="20" name="lastName" />
+        </label>
+      </div>
+      <div class="form_wrap">
+        <label>
+          <span>Email</span>
+          <input type="email" required name="email" />
+        </label>
+      </div>
+      <div class="form_wrap">
+        <label>
+          <span>Телефон</span>
+          <input type="tel" required name="phone" />
+        </label>
+      </div>
+      <div class="form_wrap">
+        <label>
+          <span>Пароль</span>
+          <input type="password" required name="password" />
+        </label>
+      </div>
+      <div class="form_wrap">
+        <span>Пол</span>
+        <label>
+          <input type="radio" name="floor" value="1" checked required />
+          <span>Ж</span>
+        </label>
+        <label>
+          <input type="radio" name="floor" value="2" required />
+          <span>М</span>
+        </label>
+      </div>
+      <div class="form_wrap">
+        <span>Ползунок</span>
+        <input type="range" id="vol" name="vol" min="0" max="50" />
+      </div>
+      <div class="form_wrap">
+        <label>
+          <span>Страна</span>
+          <select required name="сountry">
+            <option value="1">ИнноДом</option>
+            <option value="2">ИнноДомик</option>
+            <option value="3">Домик</option>
+          </select>
+        </label>
+      </div>
+      <div class="form_wrap">
+        <label>
+          <input type="checkbox" required /> Я согласен с условиями
+        </label>
+      </div>
+      <div class="form_wrap">
+        <input type="submit" value="Зарегестрироваться" />
+        <input type="reset" value="Сбросить" />
+        <input type="file" />
+      </div>
+    </form>
+  </body>
+</html>
