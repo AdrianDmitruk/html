@@ -27,64 +27,86 @@
     </header>
     <main>
       <h1>Заказать Iphone 13 Pro Max</h1>
-      <form>
+      <form
+        action="https://webhook.site/b83dcf88-ffb5-4025-9dde-c13d4c442051"
+        method="POST"
+      >
         <div class="form_wrap">
-          <label>Имя</label>
-          <input type="text" />
+          <label>
+            <span>Имя</span>
+            <input type="text" name="firstName" />
+          </label>
         </div>
         <div class="form_wrap">
-          <label>Фамилия</label>
-          <input type="text" />
+          <label>
+            <span>Фамилия</span>
+            <input type="text" name="secondName" />
+          </label>
         </div>
         <div class="form_wrap">
-          <label>Телефон</label>
-          <select>
-            <option>+375</option>
-            <option>+7</option>
-          </select>
-          <input type="tel" />
+          <label>
+            <span>Телефон</span>
+            <select name="pref">
+              <option value="+375">+375</option>
+              <option value="+7">+7</option>
+            </select>
+            <input type="tel" name="phone" />
+          </label>
         </div>
         <div class="form_wrap">
-          <label>Email</label>
-          <input type="email" />
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" />
+          </label>
         </div>
         <div class="form_wrap">
-          <label>Объем памяти</label>
-          <select>
-            <option>64</option>
-            <option>128</option>
-          </select>
+          <label>
+            <span>Объем памяти</span>
+            <select name="memory">
+              <option value="64">64</option>
+              <option value="128">128</option>
+            </select>
+          </label>
         </div>
         <p>Способ доставки</p>
         <div>
-          <input type="radio" name="del" />
-          <label>Курьером</label>
+          <label>
+            <input type="radio" name="del" checked value="1" />
+            <span>Курьером</span>
+          </label>
         </div>
         <div>
-          <input type="radio" name="del" />
-          <label>Самовывоз</label>
+          <label>
+            <input type="radio" name="del" value="2" />
+            <span>Самовывоз</span>
+          </label>
         </div>
         <p>Добавить к заказу</p>
         <div>
-          <label> <input type="checkbox" /> Прозрачный чехол </label>
-        </div>
-        <div>
           <label>
-            <input type="checkbox" /> Беспроводное зарядное устройство MagSafe
+            <input type="checkbox" name="case" /> Прозрачный чехол
           </label>
         </div>
         <div>
-          <label> <input type="checkbox" /> Наушники AirPods </label>
+          <label>
+            <input type="checkbox" name="charging" /> Беспроводное зарядное
+            устройство MagSafe
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="headphones" /> Наушники AirPods
+          </label>
         </div>
         <p>Комментарий к заказу</p>
-        <textarea cols="30" rows="10"></textarea>
+        <textarea cols="30" rows="10" name="comment"></textarea>
         <div class="form_wrap">
           <label>
-            <input type="checkbox" checked /> Принимаю
+            <input type="checkbox" checked required /> Принимаю
             <a href="#">условия сайта</a>
           </label>
         </div>
-        <button>Заказать</button>
+        <input type="submit" value="Заказать" />
       </form>
       <br />
       <br />
