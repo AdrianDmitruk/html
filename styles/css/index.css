@@ -1,0 +1,39 @@
+.blue_text {
+  color: blue;
+  border: 1px solid green;
+  display: inline-block;
+}
+
+div h2 {
+  color: red;
+  font-size: 24px;
+  background-color: yellow;
+  display: inline;
+}
+
+div > p {
+  color: blueviolet;
+  font-size: 18px;
+  font-weight: bold;
+  width: max-content;
+}
+
+p + span {
+  color: red;
+  font-size: 16px;
+}
+
+div > p > span {
+  color: green;
+  font-size: 14px;
+}
+
+#front .innodom {
+  color: rgb(255, 252, 252);
+  background-color: black;
+}
+
+.innodom {
+  color: blue;
+  font-size: 18px;
+}
